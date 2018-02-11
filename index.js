@@ -112,7 +112,7 @@ window.onload = function () {
   // page4
   var show_answer4 = $('show_answer4');
   var random_name = function () {
-    return name[Math.floor(Math.random() * name.length)];
+    return chinese[Math.floor(Math.random() * chinese.length)];
   };
   var random_number = function () {
     return Math.floor(Math.random() * 10);
