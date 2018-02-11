@@ -112,7 +112,7 @@ window.onload = function () {
   // page4
   const show_answer4 = $('show_answer4');
   const random_name = function () {
-    return '1111';
+    return name[Math.floor(Math.random() * name.length)]
   };
   const random_number = function () {
     return Math.floor(Math.random() * 10);
