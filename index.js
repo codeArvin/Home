@@ -126,17 +126,17 @@ window.onload = function () {
   $('name').addEventListener('click', function () {
     let text = '';
     for (let i = 0; i < 60; i++) {
-      text += random_name() + ' ';
+      text += '<div>' + random_name() + '</div>';
     }
-    show_answer4.innerText = text;
+    show_answer4.innerHTML = text;
   });
 
   $('num').addEventListener('click', function () {
     let text = '';
     for (let i = 0; i < 60; i++) {
-      text += random_number() + ' ';
+      text += '<div class="num">' + random_number() + '</div>';
     }
-    show_answer4.innerText = text;
+    show_answer4.innerHTML = text;
   });
 
   $('all').addEventListener('click', function () {
@@ -144,16 +144,18 @@ window.onload = function () {
     for (let i = 0; i < 25; i++) {
       r = Math.random();
       if (r < 0.25) {
-        text += random_tag() + ' ';
+        text += '<div>' + random_tag() + '</div>';
       } else if (r >= 0.25 && r < 0.5) {
-        text += random_char() + ' ';
+        text += '<div>' + random_char() + '</div>';
       } else if (r >= 0.5 && r < 0.75) {
-        text += random_number() + ' ';
+        text += '<div>' + random_number() + '</div>';
+      } else if (r >= 0.75 && r < 0.875) {
+        text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += random_name() + ' ';
+        text += '<div>' + random_name()[0] + '</div>';
       }
     }
-    show_answer4.innerText = text;
+    show_answer4.innerHTML = text;
   });
 
   // 页面tab
