@@ -89,9 +89,9 @@ button:hover {
     width: 100%;
     overflow-x: hidden;
     padding-bottom: 50px;
+    padding-top: 20px;
   }
   #question, #question2, #question3 {
-    margin-top: 20px;
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
@@ -147,8 +147,9 @@ button:hover {
   }
 
   #show_answer4 > div {
-    width: 20%;
-    height: 20%;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
     border: 1px solid #e3e3e3;
     margin-bottom: 5px;
   }
