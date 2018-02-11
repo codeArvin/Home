@@ -1,6 +1,6 @@
 var tag = '~!@#$%^&*()_+|}{:"?><,./;\'\[\]\\=\-}';
 var char = 'abcdefghigklmnopqrstuvwxyz';
-var name = [
+const name = [
   '疼痛',
   '猜测',
   '奔腾',

@@ -112,7 +112,7 @@ window.onload = function () {
   // page4
   var show_answer4 = $('show_answer4');
   var random_name = function () {
-    return name[Math.floor(Math.random() * name.length)]
+    return name[Math.floor(Math.random() * name.length)];
   };
   var random_number = function () {
     return Math.floor(Math.random() * 10);
@@ -152,7 +152,7 @@ window.onload = function () {
       } else if (r >= 0.75 && r < 0.875) {
         text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += '<div>' + random_name()[0] + '</div>';
+        text += '<div>' + random_name()[1] + '</div>';
       }
     }
     show_answer4.innerHTML = text;
@@ -161,11 +161,13 @@ window.onload = function () {
   // 页面tab
 
   for (var i = 0; i < 4; i++) {
-    $('page'+(i+1)).addEventListener('click', function () {
-      for (var j = 0; j < 4; j++) {
-        $('page'+(j+1)+'_').style.display = (i === j) ? 'block' : 'none';
-      }
-    });
+    (function (i) {
+      $('page'+(i+1)).addEventListener('click', function () {
+        for (var j = 0; j < 4; j++) {
+          $('page'+(j+1)+'_').style.display = (i === j) ? 'block' : 'none';
+        }
+      });
+    })(i);
   }
 
 
