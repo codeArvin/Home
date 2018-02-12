@@ -125,8 +125,16 @@ window.onload = function () {
   }
   $('name').addEventListener('click', function () {
     var text = '';
-    for (var i = 0; i < 60; i++) {
+    for (var i = 0; i < 25; i++) {
       text += '<div>' + random_name() + '</div>';
+    }
+    show_answer4.innerHTML = text;
+  });
+
+  $('char').addEventListener('click', function () {
+    var text = '';
+    for (var i = 0; i < 40; i++) {
+      text += '<div>' + random_char() + '</div>';
     }
     show_answer4.innerHTML = text;
   });
