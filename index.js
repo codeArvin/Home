@@ -134,7 +134,7 @@ window.onload = function () {
   $('char').addEventListener('click', function () {
     var text = '';
     for (var i = 0; i < 40; i++) {
-      text += '<div>' + random_char() + '</div>';
+      text += '<div class="num">' + random_char() + '</div>';
     }
     show_answer4.innerHTML = text;
   });
