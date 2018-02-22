@@ -126,9 +126,17 @@ window.onload = function () {
   var random_char = function () {
     return char[Math.floor(Math.random() * 52)];
   }
-  $('name').addEventListener('click', function () {
+  $('name_left').addEventListener('click', function () {
     var text = '';
     for (var i = 0; i < 25; i++) {
+      text += '<div>' + random_name() + '</div>';
+    }
+    show_answer4.innerHTML = text;
+  });
+
+  $('name_right').addEventListener('click', function () {
+    var text = '';
+    for (var i = 0; i < 64; i++) {
       text += '<div>' + random_name() + '</div>';
     }
     show_answer4.innerHTML = text;
@@ -150,9 +158,27 @@ window.onload = function () {
     show_answer4.innerHTML = text;
   });
 
-  $('all').addEventListener('click', function () {
+  $('all_left').addEventListener('click', function () {
     var text = '', r;
     for (var i = 0; i < 25; i++) {
+      r = Math.random();
+      if (r < 0.25) {
+        text += '<div>' + random_tag() + '</div>';
+      } else if (r >= 0.25 && r < 0.5) {
+        text += '<div>' + random_char() + '</div>';
+      } else if (r >= 0.5 && r < 0.75) {
+        text += '<div>' + random_dbnumber() + '</div>';
+      } else if (r >= 0.75 && r < 0.875) {
+        text += '<div>' + random_name()[0] + '</div>';
+      } else {
+        text += '<div>' + random_name() + '</div>';
+      }
+    }
+    show_answer4.innerHTML = text;
+  });
+  $('all_right').addEventListener('click', function () {
+    var text = '', r;
+    for (var i = 0; i < 64; i++) {
       r = Math.random();
       if (r < 0.25) {
         text += '<div>' + random_tag() + '</div>';

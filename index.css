@@ -13,6 +13,7 @@ button {
   outline: none;
   color: #ffffff;
   background-color: #4775ba;
+  margin-bottom: 10px;
 }
 
 button:hover {
@@ -53,6 +54,7 @@ button:hover {
     border: 1px solid #e3e3e3;
     line-height: 100px;
     margin-bottom: 5px;
+    padding: 0 10px;
   }
 
   .num {
@@ -151,6 +153,7 @@ button:hover {
     line-height: 50px;
     border: 1px solid #e3e3e3;
     margin-bottom: 5px;
+    padding: 0 10px;
   }
 
   .num {
