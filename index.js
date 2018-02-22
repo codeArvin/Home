@@ -117,11 +117,14 @@ window.onload = function () {
   var random_number = function () {
     return Math.floor(Math.random() * 10);
   };
+  var random_dbnumber = function () {
+    return Math.floor(Math.random() * 100);
+  }
   var random_tag = function () {
     return tag[Math.floor(Math.random() * 32)];
   }
   var random_char = function () {
-    return char[Math.floor(Math.random() * 26)];
+    return char[Math.floor(Math.random() * 52)];
   }
   $('name').addEventListener('click', function () {
     var text = '';
@@ -156,11 +159,11 @@ window.onload = function () {
       } else if (r >= 0.25 && r < 0.5) {
         text += '<div>' + random_char() + '</div>';
       } else if (r >= 0.5 && r < 0.75) {
-        text += '<div>' + random_number() + '</div>';
+        text += '<div>' + random_dbnumber() + '</div>';
       } else if (r >= 0.75 && r < 0.875) {
         text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += '<div>' + random_name()[1] + '</div>';
+        text += '<div>' + random_name() + '</div>';
       }
     }
     show_answer4.innerHTML = text;
