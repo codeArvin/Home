@@ -124,7 +124,7 @@ window.onload = function () {
     return tag[Math.floor(Math.random() * 32)];
   }
   var random_char = function () {
-    return char[Math.floor(Math.random() * 52)];
+    return char[Math.floor(Math.random() * 26)];
   }
   $('name_left').addEventListener('click', function () {
     var text = '';
@@ -165,7 +165,8 @@ window.onload = function () {
       if (r < 0.25) {
         text += '<div>' + random_tag() + '</div>';
       } else if (r >= 0.25 && r < 0.5) {
-        text += '<div>' + random_char() + '</div>';
+        let char = random_char();
+        text += '<div>' + (Math.random() > 0.5 ? char : char.toUpperCase()) + '</div>';
       } else if (r >= 0.5 && r < 0.75) {
         text += '<div>' + random_dbnumber() + '</div>';
       } else if (r >= 0.75 && r < 0.875) {
