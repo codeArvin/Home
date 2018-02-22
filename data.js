@@ -1,5 +1,5 @@
 var tag = '~!@#$%^&*()_+|}{:"?><,./;\'\[\]\\=\-}';
-var char = 'abcdefghigklmnopqrstuvwxyzABCDEFGHIGKLMNOPQRSTUVWXYZ';
+var char = 'abcdefghigklmnopqrstuvwxyz';
 var chinese = [
   '疼痛',
   '猜测',
