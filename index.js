@@ -131,6 +131,7 @@ window.onload = function () {
     for (var i = 0; i < 25; i++) {
       text += '<div>' + random_name() + '</div>';
     }
+    show_answer4.style.width = '600px';
     show_answer4.innerHTML = text;
   });
 
@@ -139,6 +140,7 @@ window.onload = function () {
     for (var i = 0; i < 64; i++) {
       text += '<div>' + random_name() + '</div>';
     }
+    show_answer4.style.width = '100%';
     show_answer4.innerHTML = text;
   });
 
@@ -147,6 +149,7 @@ window.onload = function () {
     for (var i = 0; i < 40; i++) {
       text += '<div class="num">' + random_char() + '</div>';
     }
+    show_answer4.style.width = '600px';
     show_answer4.innerHTML = text;
   });
 
@@ -155,6 +158,7 @@ window.onload = function () {
     for (var i = 0; i < 60; i++) {
       text += '<div class="num">' + random_number() + '</div>';
     }
+    show_answer4.style.width = '600px';
     show_answer4.innerHTML = text;
   });
 
@@ -175,6 +179,7 @@ window.onload = function () {
         text += '<div>' + random_name() + '</div>';
       }
     }
+    show_answer4.style.width = '600px';
     show_answer4.innerHTML = text;
   });
   $('all_right').addEventListener('click', function () {
@@ -193,6 +198,7 @@ window.onload = function () {
         text += '<div>' + random_name() + '</div>';
       }
     }
+    show_answer4.style.width = '100%';
     show_answer4.innerHTML = text;
   });
 
