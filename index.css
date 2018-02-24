@@ -1,7 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-
 }
 
 button {
@@ -41,7 +40,7 @@ button:hover {
   #show_answer4 {
     word-wrap:break-word;
     min-height: 300px;
-    width: 600px;
+    width: 1000px;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
@@ -101,8 +100,8 @@ button:hover {
   }
 
   #show_answer, #show_answer2, #show_answer3, #show_answer4 {
-    width: 80%;
-    padding: 0 10%;
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     font-size: 30px;
   }
@@ -147,6 +146,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    box-sizing: border-box;
   }
 
   #show_answer4 > div {
