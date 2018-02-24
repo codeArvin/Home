@@ -181,7 +181,7 @@ window.onload = function () {
       } else if (r >= 0.75 && r < 0.875) {
         text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += '<div>' + random_name()[1] + '</div>';
+        text += '<div>' + random_name()[0] + '</div>';
       }
     }
     show_answer4.innerHTML = text;
@@ -199,7 +199,7 @@ window.onload = function () {
       } else if (r >= 0.75 && r < 0.875) {
         text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += '<div>' + random_name()[1] + '</div>';
+        text += '<div>' + random_name()[0] + '</div>';
       }
     }
     show_answer4.innerHTML = text;
