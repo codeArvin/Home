@@ -45,7 +45,7 @@ button:hover {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   #show_answer4 > div {
@@ -55,6 +55,7 @@ button:hover {
     line-height: 100px;
     margin-bottom: 5px;
     padding: 0 10px;
+    margin-right: 5px;
   }
 
   .num {
@@ -145,7 +146,7 @@ button:hover {
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   #show_answer4 > div {

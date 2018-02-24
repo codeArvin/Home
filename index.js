@@ -114,6 +114,15 @@ window.onload = function () {
   var random_name = function () {
     return chinese[Math.floor(Math.random() * chinese.length)];
   };
+  var random_name_two = function () {
+    var name = null;
+    while (true) {
+      name = chinese[Math.floor(Math.random() * chinese.length)]
+      if (name.length === 2) {
+        return name;
+      }
+    };
+  };
   var random_number = function () {
     return Math.floor(Math.random() * 10);
   };
@@ -138,7 +147,7 @@ window.onload = function () {
   $('name_right').addEventListener('click', function () {
     var text = '';
     for (var i = 0; i < 64; i++) {
-      text += '<div>' + random_name() + '</div>';
+      text += '<div>' + random_name_two() + '</div>';
     }
     show_answer4.style.width = '100%';
     show_answer4.innerHTML = text;
@@ -176,7 +185,7 @@ window.onload = function () {
       } else if (r >= 0.75 && r < 0.875) {
         text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += '<div>' + random_name() + '</div>';
+        text += '<div>' + random_name()[1] + '</div>';
       }
     }
     show_answer4.style.width = '600px';
@@ -195,7 +204,7 @@ window.onload = function () {
       } else if (r >= 0.75 && r < 0.875) {
         text += '<div>' + random_name()[0] + '</div>';
       } else {
-        text += '<div>' + random_name() + '</div>';
+        text += '<div>' + random_name()[1] + '</div>';
       }
     }
     show_answer4.style.width = '100%';
